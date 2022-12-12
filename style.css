@@ -1,0 +1,68 @@
+.sky {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/sky.jpg);
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.cloud { 
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+    margin: 150px;
+    background: #D5DEE9;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+    border-radius: 50% 50% 0 0;
+    }
+    .cloud:before, 
+    .cloud:after {
+    content: "";
+    position: absolute; 
+    bottom: -0.25em;
+    background: inherit;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+    }
+    .cloud:before {
+    left: 80%; 
+    width: 60%; 
+    height: 60%;
+    border-left: none;
+    border-radius: 50% 50% 50% 0;
+    }
+    .cloud:after {
+    right: 80%;
+    width: 80%; 
+    height: 80%;
+    border-right: none;
+    border-radius: 50% 50% 0;
+}
+
+.cloud {
+    font-size: calc(16px + 1.2vw);
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    animation: moveleft 4s;
+    z-index: 1;
+}
+    
+    @keyframes moveleft {
+       
+
+    0% {transform: translateX(-150%);}
+
+        100% {
+            transform: translateX(calc(100vw - 50px - 200px - 168px - 128px));
+        }
+  
+ 
+        
+}
+      
